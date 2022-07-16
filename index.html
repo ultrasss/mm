@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -55,13 +56,35 @@
             </div>
          </div>   
     </header>
-        
-    <div class="offer">
-
-    </div>
-    <div class="main_pic">
-
-    </div>
+    <section class="music">
+        <div class="container">
+            <div class="music__inner">
+                <div class="music__column">
+                    <h1 class="music__title">Твоя музыка.<br>Твоя жизнь.</h1>
+                    <h3 class="music__subtitle">Узнай | Исследуй | Создай</h3>
+                    <button class="music__start">
+                        <a class="music__link" href="#">начать</a>
+                    </button>
+                </div>
+                <div class="music__column music__column-image">
+                   <div class="music-image">
+                    <img class="music-image__item" src="img/main_img.png" alt="">
+                   </div> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="music-slider">
+                <img class="music-slider__item" src="img/slider_pic1.jpeg" alt="">
+                <img class="music-slider__item" src="img/slider_pic2.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
