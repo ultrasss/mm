@@ -1,6 +1,3 @@
-(() => {
-    document.addEventListener("DOMContentLoaded", () => {
-        // js code here
-    }
-    );
-})()
+$(function(){
+    $('.music-slider').slick();
+});

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>M | Music</title>
@@ -8,51 +7,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="content-container first_screen">
-        <header class="page-header">
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="M | Music" width="46" height="60">
-                M | Music
-            </a>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="list-item "><a href="#" class="item-link active">Главная</a></li>
-                    <li class="list-item"><a href="#" class="item-link">О проекте</a></li>
-                    <li class="list-item"><a href="#" class="item-link">Контакты</a></li>
-                </ul>
-            </nav>
-            <a class="phone">
+    <header class="header">
+         <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="a">
+                    <img class="logo__img" src="img/logo.png" alt="M | Music">M | Music
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">О проекте</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="phone">
                 +7 098 765 43 21
-            </a>
-            <ul class="social-list">
-                <li class="social-item">
-                    <a href="#" class="social-link">
-                        <img src="img/VK_icon.png" alt="Иконка Вконтакте" width="65" height="65">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#" class="social-link">
-                        <img src="img/TG_icon.png" alt="Иконка Телеграма" width="65" height="65">
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="#" class="social-link">
-                        <img src="img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
-                    </a>
-                </li>
-            </ul>    
-        </header>
-        <div class="offer">
-
+                </a>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                            <img src="img/VK_icon.png" alt="Иконка Вконтакте" width="65" height="65">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                            <img src="img/TG_icon.png" alt="Иконка Телеграма" width="65" height="65">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                            <img src="img/YT_icon.png" alt="Иконка Youtube" width="65" height="65">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </div>   
+    </header>
+    <section class="music">
+        <div class="container">
+            <div class="music__inner">
+                <div class="music__column">
+                    <h1 class="music__title">Твоя музыка.<br>Твоя жизнь.</h1>
+                    <h3 class="music__subtitle">Узнай | Исследуй | Создай</h3>
+                    <button class="music__start">
+                        <a class="music__link" href="#">начать</a>
+                    </button>
+                </div>
+                <div class="music__column music__column-image">
+                   <div class="music-image">
+                    <img class="music-image__item" src="img/main_img.png" alt="">
+                   </div> 
+                </div>
+            </div>
         </div>
-        <div class="main_pic">
-
+        <div class="container">
+            <div class="music-slider">
+                <img class="music-slider__item" src="img/slider_pic1.jpeg" alt="">
+                <img class="music-slider__item" src="img/slider_pic2.jpeg" alt="">
+            </div>
         </div>
-    </div>
+    </section>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
