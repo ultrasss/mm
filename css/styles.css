@@ -97,6 +97,16 @@ body{
     text-transform: uppercase;
 }
 
+.music-slider {
+    flex-basis: 600px;
+
+    max-width: 600px;
+}
+
+.slick-dots{
+    
+}
+
 /* 
 //Общие стили 
 body {
