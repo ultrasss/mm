@@ -97,14 +97,28 @@ body{
     text-transform: uppercase;
 }
 
-.music-slider {
+.music-slider .slick-dots{
     flex-basis: 600px;
-
     max-width: 600px;
+    right: 0;
+    top: 50px
 }
 
 .slick-dots{
-    
+    position: absolute;
+}
+
+.slick-dots li + li {
+    padding-top: 10 px;
+}
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color:#cf1e1e;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
 }
 
 /* 
