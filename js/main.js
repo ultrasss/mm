@@ -1,6 +1,6 @@
 $(function(){
     $('.music-slider').slick({
-
+              
     });
     
 });
