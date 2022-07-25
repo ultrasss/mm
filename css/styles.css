@@ -97,11 +97,59 @@ body{
     text-transform: uppercase;
 }
 
+.music-slider {
+    position: relative;
+    flex-basis: 220px;
+    max-width: 220px;
+    padding: 0px 60px;
+}
+.slick-list{
+
+}
+.slick-track{
+
+}
+
+.slick-slide{
+
+}
+
+.slick-slide .slick-active{
+
+}
+.slick-slide .slick-current{
+
+}
+
+.music-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -110px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+}
+.music-slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/music-slider-left.svg') 0 0 / 100% no-repeat;
+}
+.music-slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/music-slider-right.svg') 0 0 / 100% no-repeat;
+}
+
+.music-slider__item {
+
+}
+
+
+/* 
 .music-slider .slick-dots{
     flex-basis: 600px;
     max-width: 600px;
     right: 0;
-    top: 50px
+    top: 50px;
 }
 
 .slick-dots{
