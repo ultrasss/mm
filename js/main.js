@@ -1,5 +1,5 @@
 $(function(){
-    $('.music-slider').slick({
+    $('.music__slider').slick({
         arrows: true,
         dots: true,
         infinite: true,

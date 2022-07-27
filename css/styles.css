@@ -23,20 +23,27 @@ body{
     color: #ffffff;
     background-color: black;
 }
+
 /* стили */
 
 .container{
     max-width: 1220px;
     padding: 0 10px;
-    margin: 58px auto;
+    margin: auto;
 }
-.container__inner {
-    position: absolute;
-    z-index: 10;
-    width: 1600px;
-    height: 900px;
-    background-color: black;
+
+.container_w{
+    background-color: #ffffff;
 }
+.body_w{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -67,7 +74,7 @@ body{
 }
 
 .music{
-    padding: 22px 0 124px;
+    
 }
 .music__inner{
     display: flex;
@@ -106,7 +113,7 @@ body{
 }
 
 /* СЛАЙДЕР*/
-.music-slider {
+.music__slider {
     /* display: flex;
     flex-direction: column; */
     position: relative;
@@ -132,7 +139,7 @@ body{
 
 }
 
-.music-slider .slick-arrow {
+.music__slider .slick-arrow {
     position: absolute;
     top: 50%;
     margin: -60px 0px 0px 0px;
@@ -141,20 +148,20 @@ body{
     width: 35px;
     height: 35px;
 }
-.music-slider .slick-arrow.slick-prev {
+.music__slider .slick-arrow.slick-prev {
     border: 0;
     padding: 0;
     left: -65px;
     background: url('../img/music-slider-left.png') 0 0 / 100% no-repeat;
 }
-.music-slider .slick-arrow.slick-next {
+.music__slider .slick-arrow.slick-next {
     border: 0;
     padding: 0;
     right: -35px;
     background: url('../img/music-slider-right.png') 0 0 / 100% no-repeat;
 }
 
-.music-slider-item {
+.music__slider-item {
     /* width: 220px;
     height: 210px; */
     background-color: #ffffff;
@@ -164,64 +171,64 @@ body{
     height: 220px;
     margin-right: 30px;
 }
-.music-slider-item-block{
+.music__slider-item-block{
     display: flex;
     align-items: center;
     padding: 21px 0 7px 29px;
     
 }
 
-.music-slider-text1 {
+.music__slider-text1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #f07530;   
 }
-.music-slider-text2 {
+.music__slider-text2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #55BC31;   
 }
 
-.music-slider-text3 {
+.music__slider-text3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #141683;   
 }
 
-.music-slider-text4 {
+.music__slider-text4 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #b6117f;   
 }
 
-.music-slider-arrow {
+.music__slider-arrow {
     margin-left: 11px;
     width: 13px;
     height: 10px;
 }
 
-.music-slider-image {
+.music__slider-image {
     width: 129px;
     height: 128px;
     margin-left: 48px;
 }
 
-.music-slider .slick-dots {
+.music__slider .slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.music-slider .slick-dots li{
+.music__slider .slick-dots li{
     list-style: none;
     margin: 0px 20px;
 }
 
-.music-slider .slick-dots button {
+.music__slider .slick-dots button {
     font-size: 0;
     background-color: #ffffff;
     /* border-color: #43B570; */
@@ -229,11 +236,26 @@ body{
     height: 10px;
     border-radius: 50%;
 }
-.music-slider .slick-dots li.slick-active button{
+.music__slider .slick-dots li.slick-active button{
     background-color: transparent;
     border: 1px solid #ffffff;
 }
 
+/*Тригеры*/
+.triggers__inner{
+    display: flex;
+    flex-direction: column;
+}
+.triggers__native{
+    display: flex;
+}
+.triggers__native-item{
+    display: flex;
+}
+.triggers__nativ-item-text{
+    display: flex;
+    flex-direction: column;
+}
 /* 
 //Общие стили 
 body {
