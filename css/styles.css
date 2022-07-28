@@ -31,17 +31,14 @@ body{
     padding: 0 10px;
     margin: auto;
 }
-
-.container_w{
+.container_max{
+    max-width: 1600px;
+    margin: auto;
     background-color: #ffffff;
 }
-.body_w{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+.container_w{
+    background-color: #ffffff;
     color: #000000;
-    background-color: rgb(255, 255, 255);
 }
 
 .header__inner{
@@ -79,6 +76,7 @@ body{
 .music__inner{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 124px;
 }
 
 .music__column-image{
@@ -120,6 +118,8 @@ body{
     /* flex-basis: 420px; */
     max-width: 500px;
     /*margin-left: 30px; */
+    top: -154px;
+
 }
 .slick-list{
     overflow: hidden;
@@ -255,6 +255,102 @@ body{
 .triggers__nativ-item-text{
     display: flex;
     flex-direction: column;
+}
+/*Галерея*/
+section.gallery{
+    position: relative;
+  }
+  .gallery-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 30px;
+  }
+  .gallery-item{
+    display: block;
+    flex: 25%;
+    overflow: hidden;
+    position: relative;
+  }
+  .gallery-item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity .5s ease;
+    z-index: 2;
+  }
+  .gallery-item:hover .gallery-item-hover{
+    opacity: 1;
+  }
+  .gallery-item:hover img{
+    transform: scale(1.3) rotate(5deg);
+  }
+  .gallery-item img{
+    max-width: 100%;
+    height: auto;
+    transition: all .5s ease;
+  }
+  @media (max-width: 991px){
+    .gallery-item{
+      flex: 33.3%;
+    }
+  }
+  @media (max-width: 768px){
+    .gallery-item{
+      flex: 50%;
+    }
+  }
+  @media (max-width: 530px){
+    .gallery-item{
+      flex: 100%;
+    }
+  }
+
+/* О проекте*/
+.music_about__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.music_about__column-image{
+    flex-basis: 840px;
+    margin-left: 187px;
+}
+/* Контакты*/
+
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.contacts__column{
+    flex-basis:30%
+}
+.contacts__column.contacts__column-image{
+    flex-basis:70%
+}
+.contacts-bgimage{
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    }
+    .contacts-bgimage.contacts-bgimage__item{
+    top: 50%;
+    left: 0;
+}
+.contacts__column-image{
+    flex-basis: 560px;
+    margin-left: 187px;
 }
 /* 
 //Общие стили 
