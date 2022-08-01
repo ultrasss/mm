@@ -229,7 +229,59 @@
             <div class="container container-wthnbg">
                 <div class="contacts__inner">
                     <div class="contacts__column-form">
-                        <p class="title">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <div class="form">
+                            <form action="#" id="form" class="form__body">
+                                <h1 class="form__title">Есть вопросы? Задавайте!</h1>
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя*:</label>
+                                    <input id="formName"type="text" name="name" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">E-mail*:</label>
+                                    <input id="formEmail"type="text" name="email" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__label">Музыкант или не музыкант?:</div>
+                                    <div class="options">
+                                        <div class="options__item">
+                                            <input id="formMusicMan" checked type="radio" value="music" name="man" class="options__input">
+                                            <label for="formMusicMan" class="options__label">Музыкант</label>
+                                        </div>
+                                        <div class="options__item">
+                                            <input id="formNoMusicMan" type="radio" value="Nomusic" name="man" class="options__input">
+                                            <label for="formNoMusicMan" class="options__label">НеМузыкант</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__item">
+                                    <label for="formMessage" class="form__label">Сообщение:</label>
+                                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__label">Возраст:</div>
+                                    <select name="age" class="select">
+                                        <option value="от 18 до 25" selected="selected">Молодой</option>
+                                        <option value="от 25 до 45">Средний</option>
+                                        <option value="после 45">Старый</option>
+                                    </select>
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__label">Прикрепить фото</div>
+                                    <div class="file__item"> 
+                                        <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                                        <div class="file__button">Выбрать</div>
+                                    </div>
+                                    <div class="file__preview"></div>
+                                </div>
+                                <div class="form__item">
+                                    <div class="checkbox">
+                                        <input id="formAgreement" type="checkbox" name ="agreement" class="checkbox__input">
+                                        <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку ПД</span></label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="forn__button">Отправить</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="contacts__column-image">
                         <img class="contacts-image__item" src="img/contacts_img.jpg" alt="">
