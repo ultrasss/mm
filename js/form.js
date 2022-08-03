@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     //Функция теста email
     function emailTest(input) {
-        return !/^\w+([\.-]?\w+)*@w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-    }
+        return !/.+@.+\..+/.test(input.value);
+    }           
     
     //Получаем инпут file в переменную
     const formImage = document.getElementById('formImage');

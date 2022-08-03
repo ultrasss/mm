@@ -18,9 +18,9 @@ $mail->addAddress('code@fls.guru');
 $mail->Subject  = 'Привет! Это "Фрилансер по жизни"';
 
 //Рука
-$hand = "Правая";
-if(S_POST['hand'] == "left"){
-    $hand = "Левая";
+$man = "Музыкант";
+if(S_POST['man'] == "Nomusic"){
+    $man = "НеМузыкант";
 }
 
 //Тело письма
@@ -32,8 +32,8 @@ if(trim(!empty($_POST['name']))){
 if(trim(!empty($_POST['email']))){
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
-if(trim(!empty($_POST['hand']))){
-    $body.='<p><strong>Рука:</strong> '.$_hand['hand'].'</p>';
+if(trim(!empty($_POST['man']))){
+    $body.='<p><strong>Кто Вы?</strong> '.$_man['man'].'</p>';
 }
 if(trim(!empty($_POST['age']))){
     $body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
@@ -46,9 +46,9 @@ if(trim(!empty($_POST['message']))){
 //Прикрепить файл
 if (!empty($_FILES['image']['tmp_name'])) {
     //путь загрузки файла 
-    $filePath = __DIR__	 . "/files/" . $_FILES['image']['name']
+    $filePath = __DIR__	 . "/files/" . $_FILES['image']['name'];
     //грузим файл
-    if (copy($_FILES['image']['tmp_name'], (filePath)){
+    if (copy($_FILES['image']['tmp_name'], $filePath)){
         $fileAttach = $filePath;
         $body.='<p><strong>Фото в npиложении</strong>';
         $mail->addAttachment($fileAttach);
@@ -67,5 +67,5 @@ if (!empty($_FILES['image']['tmp_name'])) {
     $response - ['message' => $message];
     
     header('Content-type: application/json'); 
-    echo json_encode((response);
+    echo json_encode($response);
 ?>
