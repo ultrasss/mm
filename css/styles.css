@@ -342,15 +342,38 @@ body{
 
 .triggers__native{
     display: flex;
+    justify-content: space-between;
     padding-bottom: 50px;
 }
 .triggers__native-item{
     display: flex;
+    margin-right: 30px;
 }
-.triggers__nativ-item-text{
+.triggers__native-item-pic {
+    margin-right: 27px;
+}
+.triggers__native-item-text{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
+.triggers__native-item-title{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;   
+    font-size: 20px;
+    line-height: 24px;
+}
+.triggers__native-item-subtitle{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;   
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+
 /*Галерея*/
 
 .gallery__title{
@@ -684,17 +707,19 @@ textarea.form__input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 58px;
+    height: 100px;
+    /* margin-top: 58px; */
 }
 .footer__contacts {
 
 }
 .footer__contacts-link {
-
+    display: flex;
+    margin-top: 10px;
 }
 
 .footer__contacts-img {
-    
+
 }
 /* 
 //Общие стили 
