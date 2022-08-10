@@ -30,7 +30,20 @@ body{
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.065em;
-
+    padding-top: 50px;
+}
+.subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+}
+.title-about {
+    padding-top: 0px;
+}
+.title-form {
+    font-size: 27px;
 }
 /* стили */
 
@@ -44,18 +57,48 @@ body{
     margin: auto;
     background-color: #ffffff;
 }
+/* .container_max-w-b {
+    max-width: 1600px;
+    margin: auto;
+    background: url("../img/about_img_.jpg") center /50px no-repeat;
+} */
 .container-w{
     background-color: #ffffff;
     color: #000000;
 }
+.container-w-bckgr{
+    background-color: transparent;
+}
 .container-noAdd {
     height: 150px;
 }
-.container_max-wthbg{
+.container_max-about {
+    padding-top: 6.352%;
+    /* padding-top: 9.752%;  636px/1600px = */
+    background-image: url(../img/music_about_bkgr.jpg);
+    background-size: cover;
+    background-position: center;  /* Internet Explorer 7/8 */
+    -moz-background-size: cover;  /* Firefox 3.6 */ 
+    /* max-width: 1600px;
+    margin: auto;
+    width: 1600px;
+    height: 656px;
+    background: url(../img/music_about_bkgr.jpg) 0 0 / 100% no-repeat; */
+    /* background-size: cover; */
+    /* background-size: 100% 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+    -khtml-background-size: 100%;
+    background-size: 100%; */
+}
+.container_max-contacts{
     max-width: 1600px;
     margin: auto;
     background: url('../img/contacts_bg.jpg') 0 0 / 100% no-repeat;
     color: #ffffff;
+    padding-top: 50px;
 }
 .container-wthnbg{
     background-color: none;
@@ -380,20 +423,31 @@ section.gallery{
   }
 
 /* О проекте*/
+.music__about-title {
+    /* padding-top: 50px; */
+}
 .music__about-inner{
     display: flex;
     justify-content: space-between;
 }
+.music__about-info {
+    max-width: 443px;
+    display: flex;
+    flex-direction: column;
+}
+
 .music__about-text{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    padding-top: 5px;
 }
-.music__about-column-image{
-    flex-basis: 840px;
-    margin-left: 187px;
+.music__about-text-next{
+    color: red;
+    padding-top: 0px;
+    font-size: 17px;
 }
 /* Контакты*/
 
@@ -408,10 +462,9 @@ section.gallery{
 }
 
 .form {
-    max-width: 550px;
+    max-width: 443px;
     margin: 0px auto;
     color: #fff;
-    padding: 30px 0;
 }
 .form *{
     outline: none;
@@ -434,16 +487,12 @@ section.gallery{
 }
 /* _sending */
 
-.form__title {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0px 0px 0px 30px;
-}
 .form__item {
     margin: 0px 0px 20px 0px;
+    padding-top: 10px;
 }
 .form__label {
-font-size: 18px;
+font-size: 16px;
 display: block;
 margin: 0px 0px 10x 0px;
 }
@@ -452,7 +501,7 @@ margin: 0px 0px 10x 0px;
     padding: 0px 20px;
     border-radius: 5px;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.5s ease 0s;   
 }
 .form__input:focus{
@@ -567,7 +616,7 @@ textarea.form__input {
 }
 
 .checkbox__label {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
     display: inline-flex;
     align-items: center;
@@ -627,6 +676,25 @@ textarea.form__input {
     top: 3px;
     background-color: #4f6146;
     box-shadow: 0 2px 0 #161b13;
+}
+
+
+/* футер*/
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+}
+.footer__contacts {
+
+}
+.footer__contacts-link {
+
+}
+
+.footer__contacts-img {
+    
 }
 /* 
 //Общие стили 

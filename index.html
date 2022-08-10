@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -212,44 +212,30 @@
     </section>
     <section class="music__about">
         <div class="container_max-w">
-            <div class="container container-w">
-                <a class="title">Мы познаем мир через музыку</a>
-                <div class="music__about-inner">
-                    <div class="music__about-column">
+            <div class="container_max-about">
+                <div class="container container-w container-w-bckgr">
+                    <div class="music__about-info">
+                        <a class="title title-about">О проекте</a> 
+                        <a class="subtitle"><br>А какую ассоциацию вызывает у Вас фраза «У меня открылось второе дыхание»?</a>
                         <p class="music__about-text">У коучинга есть одна хорошая особенность – всегда идти вперед!
-
-                            Мы считаем, что самое важное в жизни – найти свой путь! Каждый из нас – уникален. В Вас есть то, чего нет в других. Вы можете делать то, что не сможет сделать другой. Найдите путь к себе и не сворачивайте с курса))))
-                            
-                            А мы поможем!
+                            Мы считаем, что самое важное в жизни – найти свой путь! Каждый из нас – уникален. В Вас есть то, чего нет в других. Вы можете делать то, что не сможет сделать другой. Найдите путь к себе и не сворачивайте с курса)))
+                            А мы - поможем!
                             Основная цель нашей деятельности: проведение тренингов и лекций, направленных на развитие в профессиональной деятельности, в отношениях с друзьями и близкими, саморазвитие.
-                            
-                            - Почему мы называемся «Второе дыхание»?
-                            А какую ассоциацию вызывает у Вас фраза «У меня открылось второе дыхание»?
-                            В жизни каждого человека есть периоды, когда заканчиваются силы, угасают мысли и воображение. Иногда мы не знаем, что дальше делать, теряем смысл двигаться вперед. Для того, чтобы преодолеть такой период человеку нужен внутренний баланс, спокойствие и уверенность. А внутренняя гармония ведет к гармонии со всем миром.
-                            
-                            Зачастую, для обретения гармонии человеку не хватает одного маленького элемента. Не нужно все ломать, принимать кардинальные решения, делать то, что Вам не свойственно. Главное, суметь поменять свое отношение к ситуации и людям. И тогда у Вас откроется Второе дыхание и мир вокруг Вас начнет меняться.
-                            Для нас важно найти средства и механизмы, которые помогут именно Вам, и которые Вы сможете использовать во всех сферах жизни.
-                            
-                            Мы за позитив! За новую информацию, навыки, общение, встречи, которые сделают жизнь наполненной, красочной и интересной!</p>
-                    </div>
-                    <div class="music__about-column music__about-column-image">
-                        <div class="music__about-image">
-                            <img class="music__about-image-item" src="img/about_img.jpg" alt="">
-                        </div> 
+                        </p>
+                        <p class="music__about-text music__about-text-next">Читать больше -></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <section class="contacts">
-        <div class="container_max-wthbg">
+        <div class="container_max-contacts">
             <div class="container container-wthnbg">
                 <div class="contacts__inner">
                     <div class="contacts__column-form">
                         <div class="form">
                             <form action="#" id="form" class="form__body">
-                                <h1 class="form__title">Есть вопросы? Задавайте!</h1>
+                                <a class="title title-form">Есть вопросы? Задавайте!</a>
                                 <div class="form__item">
                                     <label for="formName" class="form__label">Имя*:</label>
                                     <input id="formName"type="text" name="name" class="form__input _req">
@@ -308,15 +294,35 @@
             </div>
         </div>
     </section>
+    <!-- <div class="music__about-inner-bckgr">
+        Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie 
+   consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et 
+   iusto odio dignissim qui blandit praesent luptatum zzril delenit au gue duis dolore
+   te feugat nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci taion 
+   ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te 
+   feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.
+    </div> -->
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <a class="logo" href="a">
-                    <img class="logo__img" src="img/logo1.jpg" alt="M | Music">M | Music
-                </a>
-                <a class="footer__link" href="#"></a>
+                <div class="logo" href="a">
+                    <img class="logo__img" src="img/logo1.jpg" alt="M | Music">
+                    <a href="#">M | Music</a>
+                </div>
                 <div class="footer__copyright"></div>
-                <div class="footer__contacts"></div>
+                <div class="footer__contacts">
+                    <a class="footer__contacts-link" href="tel:+70987654321">
+                        <img class="footer__contacts-img" src="" alt="">
+                        <span>+7 098 765 43 21</span>
+                    </a>
+                    <a class="footer__contacts-link" href="mailto:chernykh2007@gmail.com">
+                        <img class="footer__contacts-img" src="" alt="">
+                        <span>chernykh2007@gmail.com</span>
+                    </a>
+                </div>
 
             </div>
         </div>
